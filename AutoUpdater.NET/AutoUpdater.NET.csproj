@@ -34,21 +34,25 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <OutputPath>bin\Debug\net20</OutputPath>
-    <DocumentationFile>bin\Debug\net20\AutoUpdater.NET.XML</DocumentationFile>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <OutputPath>build\lib\net20</OutputPath>
-    <DocumentationFile>build\lib\net20\AutoUpdater.NET.XML</DocumentationFile>
+    <OutputPath>.\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AutoUpdater.NET.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <!-- WPF Specific -->
   <PropertyGroup Condition=" '$(TargetFrameworkVersion)' != 'v2.0' And '$(TargetFrameworkVersion)' != 'v3.0' ">
@@ -291,7 +295,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AutoUpdater.NET.snk" />
     <None Include="build\Autoupdater.NET.Official.nuspec">
       <SubType>Designer</SubType>
     </None>
